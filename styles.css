@@ -26,12 +26,6 @@ a:active {
     text-decoration: none;
 }
 
-.links {
-    margin: auto;
-    text-align: center;
-    padding: 0.5%;
-}
-
 .links a, .links a:hover, .links a:active {
     color: #3851a3;
     text-decoration: none;
@@ -47,5 +41,5 @@ li {
 }
 
 img {
-    padding: auto;
+    padding: 10px;
 }
