@@ -46,7 +46,7 @@ def create_song_page(date, artist, song_title, links):
         if url:
             return f'<a href = "{url}">{label}</a>'
         else:
-            return f'<span>{label}: Not found, sorry</span>'
+            return f'<span>{label}: Not provided, by choice or by fate.</span>'
 
     html_template = f"""<!DOCTYPE html>
 <html>
