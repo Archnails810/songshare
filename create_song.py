@@ -41,6 +41,13 @@ def create_song_page(date, artist, song_title, links):
     """Generate the HTML content for a song page."""
     image_path = f"/songshare/assets/{date}.jpg"
     
+    # helper to render a link or placeholder text
+    def render_link(url, label):
+        if url:
+            return f'<a href = "{url}">{label}</a>'
+        else:
+            return f'<span>{label}: Not found, sorry</span>'
+
     html_template = f"""<!DOCTYPE html>
 <html>
   <head>
@@ -70,12 +77,12 @@ def create_song_page(date, artist, song_title, links):
     <img src="{image_path}" alt="ALBUM COVER" height="25%" width="25%">
     <hr>
     <div class = "links">
-        <a href = "{links.get('spotify', '')}">Spotify</a>
-        <a href = "{links.get('soundcloud', '')}">Soundcloud</a>
-        <a href = "{links.get('apple', '')}">Apple Music</a>
-        <a href = "{links.get('youtube', '')}">Youtube Music</a>
-        <a href = "{links.get('tidal', '')}">TIDAL</a>
-        <a href = "{links.get('qobuz', '')}">Qobuz</a>
+        {render_link(links.get('spotify', ''), 'Spotify')}
+        {render_link(links.get('soundcloud', ''), 'Soundcloud')}
+        {render_link(links.get('apple', ''), 'Apple Music')}
+        {render_link(links.get('youtube', ''), 'Youtube Music')}
+        {render_link(links.get('tidal', ''), 'TIDAL')}
+        {render_link(links.get('qobuz', ''), 'Qobuz')}
         <a href = "mailto:archnails@proton.me?subject=My%20music%20service%20is%20not%20listed.&body=Hello%20developer%2C%0A%0AI%20use%20%5BYOUR%20MUSIC%20SERVICE%20HERE%5D.%0A%0ACheck.%0A%0ASincerely%2C%0A%0AA%20user">My music service is not listed here! HA!</a>
     </div>
   </body>
