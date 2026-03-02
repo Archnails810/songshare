@@ -45,9 +45,16 @@ a:active {
     color: #4873ff;
 }
 
-li {
+.links {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 img {
