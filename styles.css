@@ -1,6 +1,16 @@
 html {
     text-align: center;
     background-color: rgb(185, 175, 161);
+    font-family: "Bpmf Huninn", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 header {
