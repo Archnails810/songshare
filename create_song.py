@@ -69,7 +69,7 @@ def create_song_page(date, artist, song_title, links):
   </head>
   <body>
     <header>
-        <a href = "/songshare"><h1>SongShare</h1></a>
+        <a href = "/songshare"><h1 id = "title">SongShare</h1></a>
         <h3>You have no excuse to not listen to the song now!</h3>
     </header>
     <h3>{artist} - {song_title}</h3>
