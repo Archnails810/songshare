@@ -51,7 +51,7 @@ a:active {
     justify-content: space-evenly;
 }
 
-#list {
+.list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
