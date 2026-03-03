@@ -56,6 +56,7 @@ def create_song_page(date, artist, song_title, links):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/songshare/styles.css">
+    <link rel="icon" type="image/x-icon" href="/songshare/assets/favicon.ico">
     <style>
       @font-face {{
         font-family: "Bpmf Huninn", sans-serif;
