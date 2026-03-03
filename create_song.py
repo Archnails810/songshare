@@ -158,7 +158,7 @@ def update_index_file(output_file, date, artist, song_title, base_dir):
     # Create the new link HTML
     date_display = format_date_display(date)
     relative_path = output_file.name
-    new_link = f'      <a href="songs/{relative_path}"><u>{date_display}</u></a>'
+    new_link = f'      <a href="songs/{relative_path}" title = "{artist} - {song_title}"><u>{date_display}</u></a>'
     
     # Find the list div and insert the new song at the top
     list_start = content.find('<div class = "list">')
